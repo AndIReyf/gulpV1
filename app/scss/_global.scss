@@ -1,0 +1,46 @@
+@import 'vars';
+@import 'fonts';
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body{
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  &.lock{
+    overflow: hidden;
+  }
+}
+
+body{
+  overflow-x: hidden;
+  min-width: 320px;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.container{
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1200px;
+}
